@@ -1,32 +1,33 @@
 package src.test;
 
-import org.junit.Test;
-import junit.frameworrk.Assert;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CalculatorTest {
 
     @Test
     void add() {
-        Assert.assertTrue(Calculator.add(2,5) == 7);
+        assertEquals(5,Calculator.add(2,3));
     }
 
     @Test
     void dif() {
-       Assert.assertTrue(Calculator.dif(10,2) == 8);
+        assertEquals(6,Calculator.dif(9,3));
     }
 
     @Test
     void div() {
-        Assert.assertTrue(Calculator.div(10,2) == 5);
+        assertEquals(5,Calculator.div(15,3));
     }
 
     @Test
     void times() {
-        Assert.assertTrue(Calculator.times(10,2) == 20);
+        assertEquals(24,Calculator.times(8,3));
+
     }
 
     @Test
     void solver() {
-        Assert.assertTrue(Calculator.solver(5, -10) == 2);
+        assertEquals(222435,Calculator.solver());
     }
 }
