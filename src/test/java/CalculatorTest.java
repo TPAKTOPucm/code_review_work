@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+package src.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,6 +23,7 @@ class CalculatorTest {
     @Test
     void times() {
         assertEquals(24,Calculator.times(8,3));
+
     }
 
     @Test
